@@ -1,0 +1,115 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+input:focus, textarea:focus, button:focus, .btn:focus {
+  box-shadow: none !important;
+}
+
+/* ===== Header ===== */
+.navbar .nav-item {
+  text-transform: uppercase;
+}
+
+/* ===== Home ===== */
+#home #hero .carousel-item .carousel-block-1 {
+  background: url("../img/hm-1.jpeg") no-repeat center top/cover;
+  min-height: 100vh;
+}
+#home #hero .carousel-item .carousel-block-2 {
+  background: url("../img/hm-2.jpeg") no-repeat center top/cover;
+  min-height: 100vh;
+}
+#home #hero .carousel-item .carousel-block-3 {
+  background: url("../img/hm-3.jpeg") no-repeat center top/cover;
+  min-height: 100vh;
+}
+#home #get-started {
+  background: url("../img/gs.jpeg") no-repeat fixed center top/cover;
+}
+#home #get-started .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#home #info .fa {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+#home #course {
+  background: url("../img/people.jpeg") no-repeat fixed center top/cover;
+}
+#home #course .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 270px;
+}
+#home #course .fa {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #ff0000;
+}
+#home #gallery img {
+  min-height: 280px;
+}
+#home #newsletter {
+  background-color: #343a40;
+}
+
+/* ===== About Us ===== */
+#about-us #page-title {
+  background: url("../img/bg-pt.jpg") no-repeat fixed center top/cover;
+  min-height: 200px;
+}
+#about-us #info .col-12:nth-of-type(odd) .card {
+  background-color: #28a745;
+}
+#about-us #info .col-12:nth-of-type(even) .card {
+  background-color: #343a40;
+}
+#about-us #info .card .fa {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+#about-us #testimonial .slick-prev {
+  left: 0;
+}
+#about-us #testimonial .slick-next {
+  right: 0;
+}
+#about-us #testimonial .slick-prev, #about-us #testimonial .slick-next {
+  z-index: 2;
+}
+#about-us #testimonial .slick-prev::before, #about-us #testimonial .slick-next::before {
+  color: #111;
+}
+
+/* ===== Service ===== */
+#service #page-title {
+  background: url("../img/bg-pt.jpg") no-repeat fixed center top/cover;
+  min-height: 200px;
+}
+#service #faq {
+  background-color: #343a40;
+}
+
+/* ===== Blog ===== */
+#blog #page-title {
+  background: url("../img/bg-pt.jpg") no-repeat fixed center top/cover;
+  min-height: 200px;
+}
+
+/* ===== Contact Us ===== */
+#contact-us #page-title {
+  background: url("../img/bg-pt.jpg") no-repeat fixed center top/cover;
+  min-height: 200px;
+}
+#contact-us #cu-area textarea {
+  resize: none;
+}
+
+/* ===== Footer ===== */
+footer {
+  margin-top: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

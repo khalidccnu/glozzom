@@ -1,0 +1,15 @@
+// ===== Carousel Block
+@mixin cb-height {
+  min-height: 100vh;
+}
+
+// ===== Page Title
+@mixin pt-height {
+  min-height: 200px;
+}
+
+// ===== Fontawesome
+@mixin fa($fsi, $mb) {
+  font-size: $fsi;
+  margin-bottom: $mb;
+}

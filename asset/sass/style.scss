@@ -1,0 +1,177 @@
+@import "mixin";
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+input, textarea, button, .btn {
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+/* ===== Header ===== */
+.navbar {
+  .nav-item {
+    text-transform: uppercase;
+  }
+}
+
+/* ===== Home ===== */
+#home {
+  // ===== Hero =====
+  #hero {
+    .carousel-item {
+      .carousel-block-1 {
+        background: url("../img/hm-1.jpeg") no-repeat center top / cover;
+        @include cb-height;
+      }
+
+      .carousel-block-2 {
+        background: url("../img/hm-2.jpeg") no-repeat center top / cover;
+        @include cb-height;
+      }
+
+      .carousel-block-3 {
+        background: url("../img/hm-3.jpeg") no-repeat center top / cover;
+        @include cb-height;
+      }
+    }
+  }
+
+  // ===== Get Started =====
+  #get-started {
+    background: url("../img/gs.jpeg") no-repeat fixed center top / cover;
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  // ===== Info =====
+  #info {
+    .fa {
+      @include fa(50px, 10px);
+    }
+  }
+
+  // ===== Course =====
+  #course {
+    background: url("../img/people.jpeg") no-repeat fixed center top / cover;
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      min-height: 270px;
+    }
+
+    .fa {
+      @include fa(50px, 10px);
+      color: #ff0000;
+    }
+  }
+
+  // ===== Gallery =====
+  #gallery {
+    img {
+      min-height: 280px;
+    }
+  }
+
+  // ===== Newsletter =====
+  #newsletter {
+    background-color: #343a40;
+  }
+}
+
+/* ===== About Us ===== */
+#about-us {
+  // ===== Page Title =====
+  #page-title {
+    background: url("../img/bg-pt.jpg") no-repeat fixed center top / cover;
+    @include pt-height;
+  }
+
+  // ===== Info =====
+  #info {
+    .col-12 {
+      &:nth-of-type(odd) .card {
+        background-color: #28a745;
+      }
+
+      &:nth-of-type(even) .card {
+        background-color: #343a40;
+      }
+    }
+
+    .card {
+      .fa {
+        @include fa(50px, 10px);
+      }
+    }
+  }
+
+  // ===== Testimonial =====
+  #testimonial {
+    .slick-prev {
+      left: 0;
+    }
+
+    .slick-next {
+      right: 0;
+    }
+
+    .slick-prev, .slick-next {
+      z-index: 2;
+
+      &::before {
+        color: #111;
+      }
+    }
+  }
+}
+
+/* ===== Service ===== */
+#service {
+  // ===== Page Title =====
+  #page-title {
+    background: url("../img/bg-pt.jpg") no-repeat fixed center top / cover;
+    @include pt-height;
+  }
+
+  // ===== Faq =====
+  #faq {
+    background-color: #343a40;
+  }
+}
+
+/* ===== Blog ===== */
+#blog {
+  // ===== Page Title =====
+  #page-title {
+    background: url("../img/bg-pt.jpg") no-repeat fixed center top / cover;
+    @include pt-height;
+  }
+}
+
+/* ===== Contact Us ===== */
+#contact-us {
+  // ===== Page Title =====
+  #page-title {
+    background: url("../img/bg-pt.jpg") no-repeat fixed center top / cover;
+    @include pt-height;
+  }
+
+  // ===== Contact Us Area =====
+  #cu-area {
+    textarea {
+      resize: none;
+    }
+  }
+}
+
+/* ===== Footer ===== */
+footer {
+  margin-top: auto;
+}
